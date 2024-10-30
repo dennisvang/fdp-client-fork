@@ -35,7 +35,7 @@ module.exports = {
     'max-classes-per-file': 'off',
     'no-use-before-define': 'off',
     'vue/multi-word-component-names': 'off',
-    'linebreak-style': ['error', (process.platform === 'win32' ? 'windows' : 'unix')]
+    'linebreak-style': ['error', process.env.ESLINT_LINEBREAK_WINDOWS ? 'windows' : 'unix']
   },
   parserOptions: {
     parser: '@typescript-eslint/parser',
