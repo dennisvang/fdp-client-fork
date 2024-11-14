@@ -1,0 +1,12 @@
+# Prevent conversion to CRLF in case git core.autocrlf is enabled on windows, to prevent eslint errors.
+#
+# After making changes to `eol` config, *ensure working dir is clean*, then run [1]:
+#
+#     git rm -rf --cached .
+#     git reset --hard HEAD
+#
+# [1]: https://docs.github.com/en/get-started/getting-started-with-git/configuring-git-to-handle-line-endings
+
+*.js text eol=lf
+*.ts text eol=lf
+*.vue text eol=lf
